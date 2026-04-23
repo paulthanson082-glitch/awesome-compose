@@ -28,6 +28,7 @@
         <org-springframework.spring-beans.version>6.1.20</org-springframework.spring-beans.version>
         <org-springframework.spring-expression.version>6.1.20</org-springframework.spring-expression.version>
         <org-springframework.spring-context.version>6.1.20</org-springframework.spring-context.version>
+        <org-springframework-boot.spring-boot-starter-web.version>2.5.12</org-springframework-boot.spring-boot-starter-web.version>
     </properties>
 
     <dependencies>
@@ -110,6 +111,11 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-context</artifactId>
                 <version>${org-springframework.spring-context.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${org-springframework-boot.spring-boot-starter-web.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
