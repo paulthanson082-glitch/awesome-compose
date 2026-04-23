@@ -22,6 +22,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>11</java.version>
+        <org-postgresql.postgresql.version>42.3.3</org-postgresql.postgresql.version>
     </properties>
 
     <dependencies>
@@ -77,4 +78,13 @@
             </plugin>
         </plugins>
     </build>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>${org-postgresql.postgresql.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
